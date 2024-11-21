@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var number = prompt("Please enter a number:");
+        var fact = 1;
+        function factr(n){
+            if(n>number){
+                return;
+            }
+            var tmp = fact;
+            fact = fact * n;
+            n++;
+            factr(n);
+        }
+        factr(1);
+        console.log(`The fact of ${number} is ${fact}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
