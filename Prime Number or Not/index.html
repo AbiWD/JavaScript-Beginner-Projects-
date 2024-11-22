@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var number = prompt("Please enter a number:");
+        if(number == 1){
+            console.log(`${number} is neither Prime nor Composite`);
+        }else if(number < 1){
+            console.log(`${number} is not a Prime number`);
+        }else{
+            for (var i=2; i<number; i++){
+                if(number % i == 0){
+                    var res = `${number} is not a Prime number`;
+                    break;
+                }else{
+                    var res = `${number} is a Prime number`;
+                }
+            }
+            console.log(res);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
