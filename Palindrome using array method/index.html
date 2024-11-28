@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome using Array</title>
+</head>
+<script>
+    var string = prompt("Please enter a string");
+    var stringArray = string.split("");
+    var stringarrayRev = stringArray.reverse();
+    var revString = stringarrayRev.join("");
+    if(string === revString){
+        console.log(`${string} is a Palindrome!`)
+    }else{
+        console.log(`${string} is not a Palindrome.`)
+    }
+</script>
+<body>
+    
+</body>
+</html>
